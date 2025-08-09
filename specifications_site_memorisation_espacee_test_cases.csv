@@ -1,0 +1,7 @@
+﻿test_category,test_name,priority,estimated_time_hours,tools,coverage_target
+Unit Tests,Algorithme calcul sessions,Critical,8,Jest,100%
+Unit Tests,Composants Neumorphism,High,12,Jest + React Testing Library,95%
+Integration Tests,Google Calendar API,High,6,Jest + API mocks,90%
+E2E Tests,Parcours utilisateur complet,Critical,16,Playwright,Key user flows
+Performance Tests,Métriques Core Web Vitals,High,4,Lighthouse CI,All pages
+Accessibility Tests,Conformité WCAG 2.1,Critical,8,axe-core,100% components

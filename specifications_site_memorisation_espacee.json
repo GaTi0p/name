@@ -1,0 +1,280 @@
+{
+  "metadata": {
+    "title": "Site Web de Mémorisation Espacée - Spécifications Techniques",
+    "version": "1.0",
+    "created_date": "2025-08-09T11:13:56.649940",
+    "author": "Manus AI",
+    "description": "Spécifications complètes pour le développement d'un site web de mémorisation espacée avec interface Neumorphism et Bento design"
+  },
+  "project_overview": {
+    "objective": "Développer un site web responsive pour la mémorisation espacée des leçons scolaires",
+    "target_devices": [
+      "desktop",
+      "tablet",
+      "smartphone"
+    ],
+    "design_styles": [
+      "neumorphism",
+      "bento_design"
+    ],
+    "key_features": [
+      "calendrier_intelligent",
+      "synchronisation_google_calendar",
+      "suggestions_automatiques_matieres",
+      "gestion_taches_revision",
+      "algorithme_memorisation_espacee"
+    ]
+  },
+  "technical_architecture": {
+    "frontend_framework": "React 18+",
+    "styling_approach": "CSS-in-JS avec styled-components",
+    "state_management": "Redux Toolkit ou Zustand",
+    "layout_system": "CSS Grid et Flexbox",
+    "performance_optimization": [
+      "lazy_loading",
+      "web_workers",
+      "code_splitting",
+      "cache_intelligent"
+    ]
+  },
+  "design_system": {
+    "neumorphism": {
+      "base_color": "#F0F0F3",
+      "light_shadow": "#FFFFFF",
+      "dark_shadow": "#D1D9E6",
+      "accent_colors": {
+        "primary": "#6C7CE7",
+        "success": "#A8E6CF",
+        "warning": "#FFD3A5",
+        "error": "#FFB3BA"
+      },
+      "border_radius": "12px",
+      "shadow_intensity": {
+        "subtle": "0.1",
+        "normal": "0.3",
+        "prominent": "0.5"
+      }
+    },
+    "bento_design": {
+      "grid_configurations": {
+        "mobile": "1x6",
+        "tablet": "3x3",
+        "desktop": "4x4"
+      },
+      "card_spacing": "16px",
+      "card_min_height": "120px",
+      "responsive_breakpoints": {
+        "mobile": "320px-768px",
+        "tablet": "768px-1024px",
+        "desktop": "1024px+"
+      }
+    },
+    "typography": {
+      "font_family": "Inter",
+      "scale_ratio": 1.25,
+      "sizes": {
+        "metadata": "12px",
+        "secondary": "14px",
+        "body": "16px",
+        "subtitle": "20px",
+        "section_title": "24px",
+        "main_title": "32px"
+      },
+      "line_height": 1.5
+    }
+  },
+  "spaced_repetition_algorithm": {
+    "input_parameters": {
+      "task_type": [
+        "bilan",
+        "connaissance",
+        "DM",
+        "exercice"
+      ],
+      "days_remaining": "integer >= 0",
+      "difficulty": [
+        "simple",
+        "difficile",
+        "tres",
+        "extreme"
+      ],
+      "importance": [
+        1,
+        2,
+        3
+      ]
+    },
+    "calculation_factors": {
+      "difficulty_multipliers": {
+        "simple": 1.0,
+        "difficile": 1.2,
+        "tres": 1.5,
+        "extreme": 2.0
+      },
+      "importance_multipliers": {
+        "1": 0.9,
+        "2": 1.0,
+        "3": 1.1
+      },
+      "base_durations_minutes": {
+        "fiche": 30,
+        "exercices": 45,
+        "test": 60,
+        "synthese": 75,
+        "planif": 40
+      }
+    },
+    "pedagogical_roles": {
+      "fiche": "Création de fiches de révision et apprentissage de base",
+      "exercices": "Pratique et application des connaissances",
+      "test": "Simulation d'examen et évaluation",
+      "synthese": "Révision finale et consolidation",
+      "planif": "Organisation et planification du travail"
+    }
+  },
+  "google_calendar_integration": {
+    "authentication": {
+      "protocol": "OAuth 2.0 avec PKCE",
+      "scopes": [
+        "calendar.readonly",
+        "calendar.events",
+        "calendar.settings.readonly"
+      ]
+    },
+    "synchronization": {
+      "direction": "bidirectionnelle",
+      "conflict_resolution": "automatic_alternative_suggestions",
+      "event_metadata": [
+        "description_detaillee",
+        "objectifs_pedagogiques",
+        "liens_ressources",
+        "rappels_personnalises",
+        "categorisation_matiere"
+      ]
+    }
+  },
+  "ui_components": {
+    "calendar": {
+      "views": [
+        "monthly",
+        "weekly",
+        "daily"
+      ],
+      "cell_types": "neumorphism_adaptive",
+      "session_indicators": {
+        "fiche": "#6C7CE7",
+        "exercices": "#A8E6CF",
+        "test": "#FFD3A5",
+        "synthese": "#FFB3BA",
+        "planif": "#E6E6FA"
+      }
+    },
+    "forms": {
+      "validation": "real_time",
+      "feedback": "visual_immediate",
+      "states": [
+        "normal",
+        "focus",
+        "error",
+        "success"
+      ]
+    },
+    "navigation": {
+      "mobile": "vertical_stack",
+      "tablet": "grid_3x3",
+      "desktop": "grid_4x4",
+      "interactions": [
+        "touch",
+        "keyboard",
+        "mouse"
+      ]
+    }
+  },
+  "performance_requirements": {
+    "lighthouse_scores": {
+      "performance": ">= 90",
+      "accessibility": "100",
+      "best_practices": ">= 90",
+      "seo": "100"
+    },
+    "core_web_vitals": {
+      "lcp": "< 2.5s",
+      "fid": "< 100ms",
+      "cls": "< 0.1"
+    },
+    "browser_compatibility": [
+      "Chrome 90+",
+      "Firefox 88+",
+      "Safari 14+",
+      "Edge 90+"
+    ]
+  },
+  "security_privacy": {
+    "data_encryption": "AES-256 côté client",
+    "token_management": "rotation_automatique",
+    "gdpr_compliance": true,
+    "data_controls": [
+      "export_complet",
+      "suppression_totale",
+      "consentement_granulaire"
+    ]
+  },
+  "advanced_features": {
+    "ai_learning": {
+      "performance_tracking": true,
+      "adaptive_scheduling": true,
+      "predictive_modeling": true
+    },
+    "gamification": {
+      "points_system": true,
+      "badges": true,
+      "streaks": true,
+      "challenges": true
+    },
+    "analytics": {
+      "progress_dashboard": true,
+      "performance_insights": true,
+      "usage_patterns": true,
+      "recommendations": true
+    }
+  },
+  "export_formats": {
+    "markdown": {
+      "structure": "hierarchical_with_toc",
+      "metadata": "yaml_frontmatter",
+      "code_blocks": "syntax_highlighted",
+      "tables": "organized_data"
+    },
+    "json": {
+      "validation_schemas": true,
+      "examples": true,
+      "cross_references": true,
+      "metadata": "enriched"
+    },
+    "csv": {
+      "encoding": "UTF-8 with BOM",
+      "separators": "locale_appropriate",
+      "date_format": "ISO 8601",
+      "multiple_files": true
+    }
+  },
+  "testing_strategy": {
+    "unit_tests": "Jest + React Testing Library",
+    "integration_tests": "API mocking",
+    "e2e_tests": "Playwright ou Cypress",
+    "performance_tests": "automated_metrics",
+    "accessibility_tests": "axe-core",
+    "browser_tests": "cross_platform"
+  },
+  "deployment": {
+    "type": "Progressive Web App",
+    "hosting": "CDN global",
+    "environments": [
+      "development",
+      "test",
+      "production"
+    ],
+    "monitoring": "real_time_metrics",
+    "updates": "progressive_deployment"
+  }
+}

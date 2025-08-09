@@ -1,0 +1,9 @@
+﻿feature_name,category,complexity,development_time_hours,dependencies,testing_priority
+Algorithme Mémorisation Espacée,Core Logic,High,40,"Math calculations, Date handling",Critical
+Calendrier Intelligent,UI/UX,High,60,"Date library, Event management",Critical
+Synchronisation Google Calendar,Integration,Medium,30,"Google API, OAuth 2.0",High
+Interface Neumorphism,Design System,Medium,50,"CSS-in-JS, Animation library",Medium
+Grille Bento Responsive,Layout,Medium,25,"CSS Grid, Flexbox",High
+Gestion des Matières,Data Management,Low,20,"State management, Local storage",Medium
+Analytics et Insights,Analytics,Medium,35,"Chart library, Data processing",Low
+Gamification,Engagement,Low,15,"Animation, Local storage",Low

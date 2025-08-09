@@ -1,0 +1,6 @@
+﻿component_name,component_type,props,accessibility,responsive,priority
+NeuCard,Base,"shadowIntensity, baseColor, isPressed, animationDuration","Keyboard navigation, Screen reader support",Adaptive sizing,High
+NeuButton,Interactive,"variant, size, disabled, onClick","Focus indicators, ARIA labels",Touch-friendly sizing,High
+NeuCalendarCell,Calendar,"date, events, isSelected, onSelect","Date navigation, Event announcements",Grid adaptation,Critical
+NeuInput,Form,"value, onChange, validation, placeholder","Label association, Error announcements",Input scaling,High
+NeuModal,Overlay,"isOpen, onClose, title, children","Focus trap, ESC key handling",Viewport adaptation,Medium
